@@ -4,7 +4,7 @@ import Loader from './Loader';
 import logo from '../assets/logo.png';
 
 function App() {
-    const targetDate = new Date(2026, 11, 31, 23, 59, 59); // Change date here
+    const targetDate = new Date(2025, 06, 28, 23, 59, 59); // Change date here
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
     const [isVisible, setIsVisible] = useState(false);
 
