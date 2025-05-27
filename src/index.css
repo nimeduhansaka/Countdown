@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+@keyframes flipp {
+    0% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    51% {
+        transform: rotateX(270deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotateX(360deg);
+        opacity: 1;
+    }
+}
+
+.animate-flip {
+    animation: flipp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block; /* Ensures transform works properly */
+}
